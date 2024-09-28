@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Validation and Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div class="container">
+    <form id="form" class="form">
+        <div class="form-control" id="name-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control" id="email-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control" id="password-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control" id="dob-control">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control checkbox-group" id="terms-control">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I accept the Terms and Conditions</label>
+            <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>DOB</th>
+            <th>Accepted Terms?</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<script src="index.js"></script>
+
+</body>
+</html>
