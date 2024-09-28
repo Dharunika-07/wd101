@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hwb(60 95% 4%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control small {
+    color: red;
+    visibility: hidden;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-control.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
